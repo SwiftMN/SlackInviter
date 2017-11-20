@@ -1,0 +1,10 @@
+{
+    "slack": {
+        "workspace": "$SLACK_WORKSPACE",
+        "token": "$SLACK_TOKEN"
+    },
+    "recaptcha": {
+        "sitekey": "$RECAPTCHA_SITEKEY",
+        "secret": "$RECAPTCHA_SECRET"
+    }
+}

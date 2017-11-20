@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <style>
+        #embed( "css" )
+    </style>
+
+    #import("head")
+
+</head>
+<body>
+    <div class="container">
+
+        <div class="logos">
+            <div class="logo org"></div>
+            <div class="logo slack"></div>
+        </div>
+
+        #import("body")
+
+        <div class="powered">
+            powered by <a href="https://github.com/SwiftMN/slackInviter">SwiftMN/slackInviter</a>
+        </div>
+    </div>
+</body>
+</html>

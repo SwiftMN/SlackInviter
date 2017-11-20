@@ -1,0 +1,11 @@
+#extend("base")
+
+#export("body") {
+    <div>
+        Thanks for joining <span class="bold">#(name)</span> on Slack.
+    </div>
+
+    <div>
+        Check your email for your invite.
+    </div>
+}

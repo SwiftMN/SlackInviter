@@ -1,0 +1,30 @@
+#extend("base")
+
+#export("head") {
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+}
+
+#export("body") {
+    <div>
+        Join <span class="bold">#(name)</span> on Slack.
+    </div>
+
+    #if(activeUsers) { #if(totalUsers) {
+    <div>
+        <span class="bold activeUsers">#(activeUsers)</span>
+        users online now of
+        <span class="bold totalUsers">#(totalUsers)</span>
+        registered.
+    </div>
+    } }
+
+    <form action="/invite" method="post">
+        <input type="email" id="email" name="email" placeholder="you@yourdomain.com">
+        <div class="g-recaptcha" data-sitekey="#(sitekey)"></div>
+        <button type="submit">GET MY INVITE</button>
+    </form>
+
+    <div class="signin">
+        or <a href="http://#(workspace).slack.com">sign in</a>
+    </div>
+}
